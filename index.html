@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Saim chaudhary portifolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            background-color: rgb(11, 11, 48);
+            position: sticky;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            position: sticky;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(201, 201, 240);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+            background: #9c97f1;
+        }
+
+        .left {
+            font-size: 1.6rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {}
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(161, 96, 222);
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        #element {
+            color: rgb(161, 96, 222);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 150px;
+            top: 75px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            width: 150px;
+            top: 86px;
+            font-size: 9px;
+            color: gray;
+        }
+
+        .Contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            ;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .line {
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #9c97f1;
+
+        }
+
+        .Contact.content p {
+
+            font-weight: 500;
+            ;
+
+        }
+
+        .contanier {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+
+        }
+
+        .Contactinfo {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+
+        }
+
+        .box2 {
+            position: relative;
+            display: flex;
+            padding: 20px 0;
+        }
+
+        .icon {
+            min-width: 60px;
+            height: 60px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+
+        }
+
+        .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            flex-direction: column;
+            font-weight: 300;
+
+        }
+
+        .text h3 {
+            color: #9c97f1;
+        }
+
+        .contactform {
+            width: 60%;
+            padding: 40px;
+            background: #fff;
+
+        }
+
+        .contactform h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: #9c97f1;
+        }
+
+        .inputbox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+            color: #9c97f1;
+        }
+
+        .inputbox input {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            color: #9c97f1;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+
+        }
+
+        .servicescontanier {
+            width: 100%;
+            height: 100vh;
+            padding: 0, 8%;
+        }
+
+        .servicescontanier h1 {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .servicescontanier h1::after {
+            content: "";
+            background: #969cf3;
+            width: 100px;
+            position: absolute;
+            height: 5px;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px
+        }
+
+        .service {
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 25px 10px;
+            background: transparent;
+        }
+
+        .laptop {
+            width: 50px;
+            color: #969cf3;
+        }
+
+        .service h2 {
+            font-weight: 600;
+        }
+
+        .service:hover {
+            background: #303ef7;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #15183a;
+            height: 233px;
+        }
+
+        .flex {
+            display: flex;
+            padding: 23px 128px;
+            justify-content: space-evenly;
+
+        }
+
+        .flex ul {
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+
+        }
+
+        .flex ul li {
+            margin: 23px;
+        }
+
+        .flex>div {
+            width: 223px;
+            padding: 25px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+        }
+
+        .footer-first {
+            padding: 25px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            body {
+                background-color: rd;
+            }
+
+            .vertical-title {
+                left: 45px;
+            }
+
+            .vertical-desc {
+                left: 45px;
+            }
+
+        .box {
+                flex-direction: column;
+                width: 50vw;
+            }
+            nav{
+                flex-direction: column;
+            }
+
+            .vertical {
+                height: unset;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+            .leftSection{
+                display: flex;
+                width: 100% !important;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .rightSection{
+                width: 721px !important;
+            }
+            .secondsection{
+               
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                min-width: fit-content;
+            }
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <div class="left"> Saim chaudhary portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#services">Services </a></li>
+                <li><a href="/"> Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="firstsection" id="home">
+        <div class="leftSection"><div>
+
+            Hi,My name is 
+            <span class="purple">Saim </span>
+        </div>
+            <div>and I am paassionate </div>
+            <span id="element"></span>
+
+        </div>
+        <div class="rightSection"><img
+                src="534-5348813_software-development-company-png-transparent-png-removebg-preview.png" alt=""></div>
+    </section>
+    <hr>
+    <section class="secondsection" id="about">
+        <span class="text-gray">what I have done far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+            <div class="vertical">
+                <div class="vertical-title">Html Develpor in (2010-2014)</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nobis magni
+                    ea iusto delectus quae illo porro unde architecto voluptas aut laboriosam earum id quos, esse
+                    deserunt similique! Nulla ipsum dignissimos saepe dolor cum.</div>
+            </div>
+            <div class="vertical">
+                <div class="vertical-title">Html Develpor in (2010-2014)</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nobis magni
+                    ea iusto delectus quae illo porro unde architecto voluptas aut laboriosam earum id quos, esse
+                    deserunt similique! Nulla ipsum dignissimos saepe dolor cum.</div>
+            </div>
+            <div class="vertical">
+                <div class="vertical-title">Html Develpor in (2010-2014)</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nobis magni
+                    ea iusto delectus quae illo porro unde architecto voluptas aut laboriosam earum id quos, esse
+                    deserunt similique! Nulla ipsum dignissimos saepe dolor cum.</div>
+            </div>
+            <div class="vertical">
+                <div class="vertical-title">Html Develpor in (2010-2014)</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nobis magni
+                    ea iusto delectus quae illo porro unde architecto voluptas aut laboriosam earum id quos, esse
+                    deserunt similique! Nulla ipsum dignissimos saepe dolor cum.</div>
+            </div>
+          
+        </section>
+    <hr class="line">
+    <section id="services">
+        <div class="servicescontanier">
+            <h1>Our Services</h1>
+            <div class="row">
+                <div class="service">
+                    <img class="laptop" src="laap.png" alt="">
+                    <h2>Web Design</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img class="laptop" src="images.png" alt="">
+                    <h2>Marketing</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img src="download (2).png" class="laptop" alt="">
+                    <h2>Graphics</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img src="data.png" class="laptop" alt="">
+                    <h2>data Analysis</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img src="acounting.png" class="laptop" alt="">
+                    <h2>Accounting</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img src="download.png" class="laptop" alt="">
+                    <h2>APP Deveolpment</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img src="download (1).png" class="laptop" alt="">
+                    <h2>Networking</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <img src="payrool.png" class="laptop" alt="">
+                    <h2>Payroll</h2>
+                    <p>Lorem ips
+                        um dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="line">
+    <section class="Contact" id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p> </p>
+        </div>
+        <div class="contanier">
+            <div class="contactinfo">
+                <div class="box2">
+                    <div class="icon"></div>
+                    <div class="text">
+
+                        <h3>Address</h3>
+                        <p>ward no.15,street no.10,Hasilpur,punjab,pakistan</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0306-7853706</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>shaheenmodelschool795gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span> Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span> Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required..."></textarea>
+                        <span> Type your Message</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="submit">
+                        <span> </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="flex">
+        <div class="footer-firtst">
+            Chaudary Develpor portfolio
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#services">Services </a></li>
+                <li><a href="/"> Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+        www.Saim Chaudary portfolio.com | All right reserved
+    </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Develpor', 'Graphics Designer', 'Web Designer', 'Video Editor'],
+        typeSpeed: 50,
+    });
+</script>
+</body>
+
+</html>
